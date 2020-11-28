@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "649824785807",
+    "firebase_url": "https://chauffage-56984.firebaseio.com",
+    "project_id": "chauffage-56984",
+    "storage_bucket": "chauffage-56984.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649824785807:android:1e22424f1673ac60e1a7fa",
+        "android_client_info": {
+          "package_name": "mgadtech.gx.chauffage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "649824785807-nf121185hs6afu5nes3473vtr4vesq2p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mgadtech.gx.chauffage",
+            "certificate_hash": "8d60f8586c75b6c89093e31850f69191c66facad"
+          }
+        },
+        {
+          "client_id": "649824785807-eoc4h2acq40cq0d33020oikeqi7ir26l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7pHIFIS20-EADnHLsq-RkdZu-ZhQAVHY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "649824785807-eoc4h2acq40cq0d33020oikeqi7ir26l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tempE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/text_margin"
+        android:text="08:00"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_weight="1"
+        android:text="otmangx"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+    <ImageView
+        android:id="@+id/imageState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/text_margin"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ic_baseline_brightness_1_24" />
+
+    <ImageButton
+        android:id="@+id/optionsButton"
+        style="@android:style/Widget.Holo.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0"
+        android:background="@android:drawable/screen_background_light_transparent"
+        app:srcCompat="@drawable/ic_baseline_more_vert_24" />
+
+</LinearLayout>

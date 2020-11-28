@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Chauffage</string>
+    <string name="title_home">Profile</string>
+    <string name="title_dashboard">Tableau de bord</string>
+    <string name="title_notifications">Planifications</string>
+    <string name="error_unknown_error">Erreur</string>
+    <string name="connection_succeed">Connecté avec succès</string>
+    <string name="button_login_text_logged">Accèder</string>
+    <string name="button_login_text_not_logged">Connexion</string>
+    <string name="text_input_username">nom d\'utilisateur</string>
+    <string name="text_view_email">Adresse mail</string>
+    <string name="button_update_account">Mettre à jour le nom d\'utilisateur</string>
+    <string name="button_sign_out_account">Déconnexion</string>
+    <string name="button_delete_account">Supprimer mon compte</string>
+
+    <string name="popup_message_confirmation_delete_account">Es-tu sûr(e) de vouloir supprimer ton compte ?</string>
+    <string name="popup_message_choice_yes">Oui !</string>
+    <string name="popup_message_choice_no">Non</string>
+    <string name="error_user_not_activated">Cet utilisateur n\'est pas encore activé</string>
+    <string name="invalid_time">Heure invalide</string>
+    <string name="fragment_history_list">Historique</string>
+
+    <string-array name="dates">
+        <item>Aujourd\'hui</item>
+        <item>Semaine</item>
+        <item>Mois</item>
+        <item>Année</item>
+    </string-array>
+    <string name="title_activity_settings">Paramètres</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Paramètres avancées</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="delay_title">Temps d\'échauffement</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="chart_description">Température par rapport au temps</string>
+
+</resources>
