@@ -36,7 +36,7 @@ public class DetailActivity extends AppCompatActivity {
     private Thread thread;
     private List<Temperature> temperatures = new ArrayList<Temperature>();
     RecyclerView.Adapter adapter;
-
+    private String doucheID;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +46,7 @@ public class DetailActivity extends AppCompatActivity {
 
         adapter = new TempRecyclerViewAdapter(temperatures, this);
         recyclerView.setAdapter(adapter);
+        doucheID = getIntent().getStringExtra("doucheID");
     }
 
     @Override
@@ -104,19 +105,20 @@ public class DetailActivity extends AppCompatActivity {
 
             }
         };
-        myRef.child("events").addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                Map<String, Object> map = (Map<String, Object>) snapshot.getValue();
-                String doucheID = map.get("doucheID").toString();
-                myRef.child("data").child(doucheID).addChildEventListener(childEventListener);
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
+        myRef.child("data").child(doucheID).addChildEventListener(childEventListener);
+//        myRef.child("events").addListenerForSingleValueEvent(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot snapshot) {
+//                Map<String, Object> map = (Map<String, Object>) snapshot.getValue();
+//                String doucheID = map.get("doucheID").toString();
+//                myRef.child("data").child(doucheID).addChildEventListener(childEventListener);
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError error) {
+//
+//            }
+//        });
     }
 
 

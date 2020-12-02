@@ -40,7 +40,7 @@ public class EventDialog extends DialogFragment {
         super();
         calendar = Calendar.getInstance();
         datetime = Calendar.getInstance();
-        calendar.add(Calendar.MINUTE, 35);
+//        calendar.add(Calendar.MINUTE, 35);
         hour = calendar.get(Calendar.HOUR_OF_DAY);
         minute = calendar.get(Calendar.MINUTE);
         listener  = fragment ;
@@ -124,7 +124,7 @@ public class EventDialog extends DialogFragment {
             @Override
             public void onShow(DialogInterface dialog) {
                 dialogInterface = dialog;
-                ((AlertDialog)dialog).getButton(AlertDialog.BUTTON_POSITIVE).setEnabled(false);
+//                ((AlertDialog)dialog).getButton(AlertDialog.BUTTON_POSITIVE).setEnabled(false);
             }
         });
 //        android.app.AlertDialog alertDialog = dialog;

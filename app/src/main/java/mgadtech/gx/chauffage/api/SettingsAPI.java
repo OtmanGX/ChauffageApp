@@ -21,5 +21,9 @@ public class SettingsAPI {
         myRef.child("events").child("marche").setValue(value);
     }
 
+    public static void setTimeCycle(String cycle, String t, int value) {
+        myRef.child("config").child(cycle).child(t).setValue(value);
+    }
+
 
 }

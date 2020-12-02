@@ -14,6 +14,292 @@
             android:key="marche"
             app:useSimpleSummaryProvider="true"
             android:title="Marche" />
+        <ListPreference
+            android:defaultValue="false"
+            android:entries="@array/cycles"
+            android:entryValues="@array/cycles"
+            android:key="cycle"
+            android:title="Cycle" />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Cycle 1" android:key="cycle1">
+
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t1"
+            app:title="t1"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t2"
+            app:title="t2"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t3"
+            app:title="t3"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t4"
+            app:title="t4"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t5"
+            app:title="t5"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t6"
+            app:title="t6"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Cycle 2" android:key="cycle2">
+
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t1"
+            app:title="t1"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t2"
+            app:title="t2"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t3"
+            app:title="t3"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t4"
+            app:title="t4"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t5"
+            app:title="t5"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t6"
+            app:title="t6"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Cycle 3" android:key="cycle3">
+
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t1"
+            app:title="t1"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t2"
+            app:title="t2"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t3"
+            app:title="t3"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t4"
+            app:title="t4"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t5"
+            app:title="t5"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t6"
+            app:title="t6"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Cycle 4" android:key="cycle4">
+
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t1"
+            app:title="t1"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t2"
+            app:title="t2"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t3"
+            app:title="t3"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t4"
+            app:title="t4"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t5"
+            app:title="t5"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t6"
+            app:title="t6"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Cycle 5" android:key="cycle5">
+
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t1"
+            app:title="t1"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t2"
+            app:title="t2"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t3"
+            app:title="t3"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t4"
+            app:title="t4"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t5"
+            app:title="t5"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t6"
+            app:title="t6"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Cycle 6" android:key="cycle6">
+
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t1"
+            app:title="t1"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t2"
+            app:title="t2"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t3"
+            app:title="t3"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t4"
+            app:title="t4"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t5"
+            app:title="t5"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t6"
+            app:title="t6"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Cycle 7" android:key="cycle7">
+
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t1"
+            app:title="t1"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t2"
+            app:title="t2"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t3"
+            app:title="t3"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t4"
+            app:title="t4"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t5"
+            app:title="t5"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:summary="en s"
+            app:defaultValue="2"
+            app:key="t6"
+            app:title="t6"
+            app:useSimpleSummaryProvider="true" />
 
     </PreferenceCategory>
 

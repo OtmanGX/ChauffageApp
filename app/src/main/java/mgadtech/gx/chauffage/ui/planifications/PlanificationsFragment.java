@@ -228,25 +228,28 @@ public class PlanificationsFragment extends Fragment implements EventDialogListe
         if (tag != null) {
             index = removeDouche(douche);
         }
-        if (isCorrectTime(douche.getStart_date())) {
-            String key = DoucheAPI.addDouche(douche);
-            Calendar calendar = Calendar.getInstance();
-            int hourOfDay = douche.getStart_date().getHours();
-            int minute = douche.getStart_date().getMinutes();
-            String newTag = String.format("%02d:%02d", hourOfDay, minute);
-            Log.d("BDD", "Tag: " + newTag);
-            Long diff = douche.getStart_date().getTime() - calendar.getTimeInMillis();
-            Log.d("BDD", String.valueOf(diff));
-            if (tag != null) cancelWorker(douche.getId());
-            startWorker(diff, key);
-        } else {
-            Toast.makeText(getContext(), getResources().getString(R.string.invalid_time), Toast.LENGTH_SHORT).show();
-            if (tag != null)
-            {
-                if (index == 1) DOUCHES.add(douche);
-                else DOUCHES2.add(douche);
-            }
-        }
+        String key = DoucheAPI.addDouche(douche);
+        DoucheAPI.changeState(10, key);
+        Toast.makeText(getContext(), "Nouvelle douche", Toast.LENGTH_SHORT).show();
+//        if (isCorrectTime(douche.getStart_date())) {
+//            String key = DoucheAPI.addDouche(douche);
+//            Calendar calendar = Calendar.getInstance();
+//            int hourOfDay = douche.getStart_date().getHours();
+//            int minute = douche.getStart_date().getMinutes();
+//            String newTag = String.format("%02d:%02d", hourOfDay, minute);
+//            Log.d("BDD", "Tag: " + newTag);
+//            Long diff = douche.getStart_date().getTime() - calendar.getTimeInMillis();
+//            Log.d("BDD", String.valueOf(diff));
+//            if (tag != null) cancelWorker(douche.getId());
+//            startWorker(diff, key);
+//        } else {
+//            Toast.makeText(getContext(), getResources().getString(R.string.invalid_time), Toast.LENGTH_SHORT).show();
+//            if (tag != null)
+//            {
+//                if (index == 1) DOUCHES.add(douche);
+//                else DOUCHES2.add(douche);
+//            }
+//        }
     }
 
     @Override

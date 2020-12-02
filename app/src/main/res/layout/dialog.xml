@@ -29,6 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:drawableLeft="@drawable/ic_baseline_date_range_24"
+        android:enabled="false"
         android:text="8:00"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"

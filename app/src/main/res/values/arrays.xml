@@ -9,4 +9,17 @@
         <item>reply</item>
         <item>reply_all</item>
     </string-array>
+
+    <string-array name="cycles">
+        <item>Cycle 1</item>
+        <item>Cycle 2</item>
+        <item>Cycle 3</item>
+        <item>Cycle 4</item>
+        <item>Cycle 5</item>
+        <item>Cycle 6</item>
+        <item>Cycle 7</item>
+        <item>Cycle 8</item>
+        <item>Cycle 9</item>
+        <item>Cycle 10</item>
+    </string-array>
 </resources>

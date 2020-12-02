@@ -51,14 +51,16 @@ public class MyItemRecyclerViewAdapter extends RecyclerView.Adapter<MyItemRecycl
     @Override
     public void onBindViewHolder(final ViewHolder holder, final int position) {
         Calendar calendar = Calendar.getInstance();
+        holder.mItem = mValues.get(position);
         holder.mView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(fragment.getContext(), DetailActivity.class);
+                intent.putExtra("doucheID", holder.mItem.getId());
                 fragment.getActivity().startActivity(intent);
             }
         });
-        holder.mItem = mValues.get(position);
+
         holder.mIdView.setText(dateFormat.format(mValues.get(position).getStart_date()));
         holder.mContentView.setText(mValues.get(position).getNom_user());
         if (Math.abs(holder.mItem.getStart_date().getTime() - calendar.getTime().getTime())  <= 30 *60 *1000)
