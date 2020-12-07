@@ -60,6 +60,7 @@ public class SettingsActivity extends AppCompatActivity {
         @Override
         public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
 //            initializeConfig();
+            fetchData();
             setPreferencesFromResource(R.xml.root_preferences, rootKey);
             editTextPreference = findPreference("delay");
             editTextPreference2 = findPreference("marche");
@@ -71,7 +72,7 @@ public class SettingsActivity extends AppCompatActivity {
             for (int i=1;i<=7;i++) {
                 PreferenceCategory category = findPreference("cycle"+i);
                 for (int j=1;j<=6;j++)
-                    category.findPreference("t"+j).setOnPreferenceChangeListener(tListener);
+                    category.findPreference("c"+i+"t"+j).setOnPreferenceChangeListener(tListener);
             }
 
             ListPreference listPreference = findPreference("cycle");
@@ -83,7 +84,7 @@ public class SettingsActivity extends AppCompatActivity {
                     PreferenceCategory category = findPreference("cycle"+(index+1));
                     for (int i=1;i<=6;i++) {
                         SettingsAPI.myRef.child("config").child("t"+i).setValue(
-                                Integer.parseInt(((EditTextPreference)category.findPreference("t"+i)).getText()));
+                                Integer.parseInt(((EditTextPreference)category.findPreference("c"+(index+1)+"t"+i)).getText()));
                     }
                     return true;
                 }
@@ -110,7 +111,7 @@ public class SettingsActivity extends AppCompatActivity {
                         PreferenceCategory cat = findPreference("cycle"+i);
                         for (int j=1;j<=6;j++)
                         {
-                            ((EditTextPreference )cat.findPreference("t"+j)).setText(
+                            ((EditTextPreference )cat.findPreference("c"+i+"t"+j)).setText(
                                     String.valueOf(snapshot.child("cycle"+i).child("t"+j).getValue(Integer.class))
                             );
                         }
@@ -152,7 +153,7 @@ public class SettingsActivity extends AppCompatActivity {
         public boolean onPreferenceChange(Preference preference, Object newValue) {
             Log.i("Preference t1", preference.getParent().getTitle().toString());
             String cycle = preference.getParent().getKey();
-            SettingsAPI.setTimeCycle(cycle, preference.getKey(), (Integer) newValue);
+            SettingsAPI.setTimeCycle(cycle, preference.getKey().substring(2), Integer.parseInt(newValue.toString()));
             return true;
         }
     };

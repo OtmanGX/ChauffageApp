@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.github.mikephil.charting.charts.LineChart;
@@ -35,12 +36,14 @@ public class DetailActivity extends AppCompatActivity {
     GraphUtils graph;
     private Thread thread;
     private List<Temperature> temperatures = new ArrayList<Temperature>();
-    RecyclerView.Adapter adapter;
+    private RecyclerView.Adapter adapter;
+    private TextView qteTextView;
     private String doucheID;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
+        qteTextView = findViewById(R.id.qte);
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.list);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
@@ -74,6 +77,7 @@ public class DetailActivity extends AppCompatActivity {
                 long tempE =  (Long) map.get("TemperatureE");
                 long tempS = (Long) map.get("TemperatureS");
                 long time = (Long) map.get("timestamp");
+                long qte = (Long) map.get("Quantite_eau");
 
                 adapter.notifyDataSetChanged();
                 if (previousChildName == null)
@@ -83,6 +87,7 @@ public class DetailActivity extends AppCompatActivity {
                 Temperature temp = new Temperature(tempE, tempS, new Date(time), (int) (diff/1000));
                 temperatures.add(temp);
                 graph.addEntry(diff, tempE, tempS);
+                qteTextView.setText(String.valueOf(qte)+"L");
             }
 
             @Override
