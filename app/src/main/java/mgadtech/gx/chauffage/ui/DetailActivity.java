@@ -77,6 +77,7 @@ public class DetailActivity extends AppCompatActivity {
                 long tempE =  (Long) map.get("TemperatureE");
                 long tempS = (Long) map.get("TemperatureS");
                 long time = (Long) map.get("timestamp");
+                time *= 1000;
                 long qte = (Long) map.get("Quantite_eau");
 
                 adapter.notifyDataSetChanged();
