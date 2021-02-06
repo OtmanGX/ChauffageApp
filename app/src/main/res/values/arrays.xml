@@ -22,4 +22,14 @@
         <item>Cycle 9</item>
         <item>Cycle 10</item>
     </string-array>
+
+    <string-array name="modes_chauff">
+        <item>Économique</item>
+        <item>Confort</item>
+        <item>Rapide</item>
+    </string-array>
+    <string-array name="modes_fct">
+        <item>Manuel</item>
+        <item>Automatique</item>
+    </string-array>
 </resources>

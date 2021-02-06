@@ -1,6 +1,21 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <PreferenceCategory app:title="@string/modes">
+        <ListPreference
+            android:defaultValue="false"
+            android:entries="@array/modes_chauff"
+            android:entryValues="@array/modes_chauff"
+            android:key="mode_chauff"
+            android:title="Mode de chauffage" />
+
+        <ListPreference
+            android:defaultValue="false"
+            android:entries="@array/modes_fct"
+            android:entryValues="@array/modes_fct"
+            android:key="mode_fct"
+            android:title="Mode de Fonctionnement" />
+    </PreferenceCategory>
     <PreferenceCategory app:title="@string/messages_header">
 
         <EditTextPreference

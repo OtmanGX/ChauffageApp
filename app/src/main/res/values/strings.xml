@@ -43,5 +43,6 @@
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="chart_description">Température par rapport au temps</string>
+    <string name="modes">Modes</string>
 
 </resources>
