@@ -76,7 +76,8 @@ public class DetailActivity extends AppCompatActivity {
 
                 long tempE =  (Long) map.get("TemperatureE");
                 long tempS = (Long) map.get("TemperatureS");
-                long tempV = map.get("TemperatureS")!=null?(Long)map.get("TemperatureS"):0;
+                long tempV = map.get("TemperatureV")!=null?(Long)map.get("TemperatureV"):0;
+                long tempEm = map.get("TemperatureEm")!=null?(Long)map.get("TemperatureEm"):0;
                 long time = (Long) map.get("timestamp");
                 time *= 1000;
                 long qte = (Long) map.get("Quantite_eau");
@@ -86,7 +87,7 @@ public class DetailActivity extends AppCompatActivity {
                     graph.initGraph(time, "today");
                 long diff = time-graph.referenceTimestamp;
 
-                Temperature temp = new Temperature(tempE, tempS, tempV, new Date(time), (int) (diff/1000));
+                Temperature temp = new Temperature(tempE, tempS, tempV, tempEm, new Date(time), (int) (diff/1000));
                 temperatures.add(temp);
                 graph.addEntry(diff, tempE, tempS);
                 qteTextView.setText(String.valueOf(qte)+"L");

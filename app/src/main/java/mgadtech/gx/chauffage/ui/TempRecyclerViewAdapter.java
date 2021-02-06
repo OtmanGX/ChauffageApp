@@ -42,6 +42,8 @@ public class TempRecyclerViewAdapter extends RecyclerView.Adapter<TempRecyclerVi
         holder.mItem = mValues.get(position);
         holder.tempE.setText(String.valueOf(holder.mItem.getTempE())+ "°C");
         holder.tempS.setText(String.valueOf(holder.mItem.getTempS())+ "°C");
+        holder.tempV.setText(String.valueOf(holder.mItem.getTempV())+ "°C");
+        holder.tempEm.setText(String.valueOf(holder.mItem.getTempEm())+ "°C");
         holder.timestamp.setText(String.valueOf(holder.mItem.getTimestamp())+ "s");
         holder.date.setText(dateFormat.format(holder.mItem.getDate()));
     }
@@ -55,6 +57,8 @@ public class TempRecyclerViewAdapter extends RecyclerView.Adapter<TempRecyclerVi
         public final View mView;
         public final TextView tempE;
         public final TextView tempS;
+        public final TextView tempV;
+        public final TextView tempEm;
         public final TextView date;
         public final TextView timestamp;
         public Temperature mItem;
@@ -64,6 +68,8 @@ public class TempRecyclerViewAdapter extends RecyclerView.Adapter<TempRecyclerVi
             mView = view;
             tempE = (TextView) view.findViewById(R.id.tempE);
             tempS = (TextView) view.findViewById(R.id.tempS);
+            tempV = (TextView) view.findViewById(R.id.tempV);
+            tempEm = (TextView) view.findViewById(R.id.tempEm);
             date = (TextView) view.findViewById(R.id.date);
             timestamp = (TextView) view.findViewById(R.id.timestamp);
         }

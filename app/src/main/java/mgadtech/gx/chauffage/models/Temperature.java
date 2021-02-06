@@ -8,15 +8,25 @@ public class Temperature implements Serializable {
     private float tempE;
     private float tempS;
     private float tempV;
+    private float tempEm;
     private Date date;
     private int timestamp;
 
-    public Temperature(float tempE, float tempS, float tempV, Date date, int timestamp) {
+    public Temperature(float tempE, float tempS, float tempV, float tempEm, Date date, int timestamp) {
         this.tempE = tempE;
         this.tempS = tempS;
         this.tempV = tempV;
+        this.tempEm = tempEm;
         this.date = date;
         this.timestamp = timestamp;
+    }
+
+    public float getTempEm() {
+        return tempEm;
+    }
+
+    public void setTempEm(float tempEm) {
+        this.tempEm = tempEm;
     }
 
     public float getTempV() {
